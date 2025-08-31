@@ -1,4 +1,4 @@
-# Helstein Village - Issues Fixed & Testing Guide
+# Helestini Village - Issues Fixed & Testing Guide
 
 ## 🔧 Issues Fixed
 

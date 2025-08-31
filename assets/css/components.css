@@ -1,5 +1,5 @@
 /* ==========================================================================
-   HELSTEIN VILLAGE COMPONENT LIBRARY
+   Helestini VILLAGE COMPONENT LIBRARY
    Specific Components for Site Architecture
    ========================================================================== */
 
@@ -96,33 +96,38 @@
 
 .primary-nav .nav-link {
     position: relative;
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-3) var(--space-4);
     color: var(--color-neutral-700);
     font-weight: var(--font-weight-medium);
     text-decoration: none;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     transition: all var(--transition-fast);
 }
 
 .primary-nav .nav-link:hover {
     color: var(--color-primary-600);
     background: var(--color-primary-50);
+    transform: translateY(-1px);
 }
 
-.primary-nav .nav-link.active {
-    color: var(--color-primary-600);
+.primary-nav .nav-link.active,
+.primary-nav .nav-link--active {
+    color: var(--color-primary-700);
+    background: var(--color-primary-100);
     font-weight: var(--font-weight-semibold);
+    box-shadow: var(--shadow-sm);
 }
 
-.primary-nav .nav-link.active::after {
+.primary-nav .nav-link.active::after,
+.primary-nav .nav-link--active::after {
     content: '';
     position: absolute;
-    bottom: -var(--space-4);
+    bottom: -var(--space-2);
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: 2px;
-    background: var(--color-primary-600);
+    height: 3px;
+    background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-600) 100%);
     border-radius: var(--radius-full);
 }
 
@@ -211,9 +216,9 @@
     gap: var(--space-2);
     padding: var(--space-2) var(--space-3);
     background: white;
-    border: 1px solid var(--color-neutral-300);
+    border: 1px solid var(--color-primary-200);
     border-radius: var(--radius-lg);
-    color: var(--color-neutral-700);
+    color: var(--color-primary-600);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
     cursor: pointer;
@@ -221,8 +226,10 @@
 }
 
 .language-btn:hover {
-    border-color: var(--color-primary-300);
+    border-color: var(--color-primary-400);
     background: var(--color-primary-50);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
 }
 
 .language-icon {
@@ -454,6 +461,79 @@
 
 .mobile-menu__lang-separator {
     color: var(--color-neutral-400);
+}
+
+/* iOS-style Button Components */
+.btn-ios,
+.btn-ios-ghost,
+.btn-ios-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    line-height: 1;
+    border-radius: var(--radius-full);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-ios,
+.btn-ios-primary {
+    background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-600) 100%);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-ios:hover,
+.btn-ios-primary:hover {
+    background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-700) 100%);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+}
+
+.btn-ios:active,
+.btn-ios-primary:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-ios-ghost {
+    background: transparent;
+    color: var(--color-primary-600);
+    border-color: var(--color-primary-300);
+}
+
+.btn-ios-ghost:hover {
+    background: var(--color-primary-50);
+    border-color: var(--color-primary-400);
+}
+
+/* Button sizes for iOS-style */
+.btn-ios.btn-sm,
+.btn-ios-ghost.btn-sm,
+.btn-ios-primary.btn-sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-xs);
+}
+
+.btn-ios.btn-lg,
+.btn-ios-ghost.btn-lg,
+.btn-ios-primary.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-base);
+}
+
+a.btn-ios,
+a.btn-ios-ghost,
+a.btn-ios-primary {
+    text-decoration: none;
 }
 
 /* ==========================================================================

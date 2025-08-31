@@ -282,14 +282,14 @@ Replace hardcoded text with i18n attributes:
 
 **Before:**
 ```html
-<h1>Welcome to Helstein Village</h1>
+<h1>Welcome to Helestini Village</h1>
 <p>Discover our rich heritage</p>
 <button>Learn More</button>
 ```
 
 **After:**
 ```html
-<h1 data-i18n="welcome.title">Welcome to Helstein Village</h1>
+<h1 data-i18n="welcome.title">Welcome to Helestini Village</h1>
 <p data-i18n="welcome.subtitle">Discover our rich heritage</p>
 <button data-i18n="welcome.cta">Learn More</button>
 ```
@@ -301,7 +301,7 @@ Add new keys to `assets/i18n/en.json` and `assets/i18n/ro.json`:
 ```json
 {
   "welcome": {
-    "title": "Welcome to Helstein Village",
+    "title": "Welcome to Helestini Village",
     "subtitle": "Discover our rich heritage",
     "cta": "Learn More"
   }
