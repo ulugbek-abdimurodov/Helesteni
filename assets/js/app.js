@@ -1,5 +1,5 @@
 /**
- * Helestini VILLAGE - PROFESSIONAL JAVASCRIPT ARCHITECTURE
+ * Helesteni VILLAGE - PROFESSIONAL JAVASCRIPT ARCHITECTURE
  * Enterprise-grade modular application with proper separation of concerns
  * 
  * @version 2.0.0
@@ -16,7 +16,7 @@
 
     const CONFIG = {
         // Application settings
-        APP_NAME: 'Helestini Village',
+        APP_NAME: 'Helesteni Village',
         VERSION: '2.0.0',
         DEBUG: false,
 
@@ -27,7 +27,7 @@
         // Internationalization
         DEFAULT_LANGUAGE: 'en',
         SUPPORTED_LANGUAGES: ['en', 'ro'],
-        I18N_CACHE_KEY: 'Helestini_language',
+        I18N_CACHE_KEY: 'Helesteni_language',
         I18N_RESOURCE_PATH: 'assets/i18n/',
 
         // Animation settings
@@ -847,7 +847,7 @@
     });
 
     // Expose public API
-    window.HelestiniVillage = {
+    window.HelesteniVillage = {
         version: CONFIG.VERSION,
         utils: Utils,
         navigation: Navigation,
