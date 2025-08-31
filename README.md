@@ -7,7 +7,7 @@
 
 **🌐 Live Website:** [https://yourusername.github.io/Helesteni](https://yourusername.github.io/Helesteni)
 
-> Discover the heart of Transylvania through the rich cultural heritage and breathtaking landscapes of Helesteni Village. Experience authentic Romanian village life, traditional crafts, museums, and cultural events.
+> Discover the heart of Moldova Region through the rich cultural heritage and breathtaking landscapes of Helesteni Village. Experience authentic Romanian village life, traditional crafts, museums, and cultural events.
 
 ## ✨ Features
 
