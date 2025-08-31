@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Helstein Village - Professional Template</title>
+  <meta name="description" content="Professional template showcasing the enterprise-grade design system and component library for Helstein Village website." />
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
+  
+  <!-- Preload critical resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Professional CSS Architecture -->
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  
+  <!-- Enhanced JavaScript Application -->
+  <script defer src="assets/js/app.js"></script>
+</head>
+
+<body class="bg-neutral-50">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Professional Site Header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__container">
+      <!-- Brand Identity -->
+      <div class="site-header__brand">
+        <svg class="site-header__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+        <a href="home.html" class="site-header__title">Helstein Village</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
+        
+        <div class="tourism-dropdown">
+          <a class="nav-link dropdown-trigger" href="tourism.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tourism">
+            Tourism
+            <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </a>
+          <div class="tourism-dropdown-menu" role="menu" aria-label="Tourism options">
+            <a class="dropdown-item" href="tourism.html" role="menuitem" data-i18n="nav.museums">Museums</a>
+            <a class="dropdown-item" href="tourism-museums.html" role="menuitem" data-i18n="nav.workshops">Workshops</a>
+            <a class="dropdown-item" href="artists.html" role="menuitem" data-i18n="nav.artisans">Artisans</a>
+          </div>
+        </div>
+        
+        <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
+        <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
+        <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Language Controls -->
+      <div class="language-controls">
+        <button class="language-btn" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu">
+          <svg class="language-icon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true">
+            <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path>
+          </svg>
+          <span class="language-text">EN</span>
+        </button>
+        <div id="language-menu" class="language-menu" role="menu" aria-label="Language options">
+          <a class="language-option" href="#" data-set-lang="en" role="menuitem">EN</a>
+          <a class="language-option" href="#" data-set-lang="ro" role="menuitem">RO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <a class="mobile-menu__item" href="home.html" data-i18n="nav.home">Home</a>
+      <a class="mobile-menu__item" href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+      <a class="mobile-menu__item mobile-menu__item--sub" href="tourism.html" data-i18n="nav.museums">Museums</a>
+      <a class="mobile-menu__item mobile-menu__item--sub" href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
+      <a class="mobile-menu__item mobile-menu__item--sub" href="artists.html" data-i18n="nav.artisans">Artisans</a>
+      <a class="mobile-menu__item" href="events.html" data-i18n="nav.events">Events</a>
+      <a class="mobile-menu__item" href="stories.html" data-i18n="nav.stories">Stories</a>
+      <a class="mobile-menu__item" href="contacts.html" data-i18n="nav.contact">Contact</a>
+      <div class="mobile-menu__languages">
+        <a href="#" data-set-lang="en" class="mobile-menu__lang">EN</a>
+        <span class="mobile-menu__lang-separator">/</span>
+        <a href="#" data-set-lang="ro" class="mobile-menu__lang">RO</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__background" style="background-image: url('https://images.unsplash.com/photo-1565299585323-38174c21c7c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');"></div>
+      <div class="hero__content">
+        <h1 class="hero__title" data-i18n="template.hero.title">
+          Professional Template
+        </h1>
+        <p class="hero__subtitle" data-i18n="template.hero.subtitle">
+          Showcasing enterprise-grade design system and component library architecture
+        </p>
+        <div class="hero__actions">
+          <a href="#features" class="btn btn--primary btn--large" data-i18n="template.cta.explore">
+            Explore Features
+          </a>
+          <a href="#components" class="btn btn--secondary btn--large" data-i18n="template.cta.components">
+            View Components
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <div class="page-header__breadcrumb">
+            <a href="home.html" class="breadcrumb-link">Home</a>
+            <svg class="breadcrumb-separator" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+            <span class="breadcrumb-current">Template</span>
+          </div>
+          <h1 class="page-header__title" data-i18n="template.page.title">
+            Professional Component Library
+          </h1>
+          <p class="page-header__subtitle" data-i18n="template.page.subtitle">
+            Enterprise-grade design system with accessible, scalable, and maintainable components
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="template.features.title">Design System Features</h2>
+          <p class="section-subtitle" data-i18n="template.features.subtitle">
+            Built with 7+ years of professional experience and industry best practices
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="template.features.tokens.title">Design Tokens</h3>
+            <p class="feature-card__description" data-i18n="template.features.tokens.description">
+              Comprehensive system of design tokens including colors, typography, spacing, and layout variables for consistent theming.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="template.features.components.title">Component Library</h3>
+            <p class="feature-card__description" data-i18n="template.features.components.description">
+              Modular, reusable components with consistent API, documentation, and accessibility standards built-in.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="template.features.responsive.title">Responsive Design</h3>
+            <p class="feature-card__description" data-i18n="template.features.responsive.description">
+              Mobile-first responsive design with fluid grids, flexible images, and consistent breakpoints across all devices.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="template.features.accessibility.title">Accessibility First</h3>
+            <p class="feature-card__description" data-i18n="template.features.accessibility.description">
+              WCAG 2.1 AA compliant with semantic HTML, ARIA labels, keyboard navigation, and screen reader support.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="template.features.performance.title">Performance Optimized</h3>
+            <p class="feature-card__description" data-i18n="template.features.performance.description">
+              Optimized for performance with lazy loading, critical CSS inlining, and efficient asset loading strategies.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="template.features.i18n.title">Internationalization</h3>
+            <p class="feature-card__description" data-i18n="template.features.i18n.description">
+              Full internationalization support with JSON-based translations, RTL support, and dynamic language switching.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components Showcase -->
+    <section id="components" class="content-section bg-neutral-100">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="template.components.title">Component Showcase</h2>
+          <p class="section-subtitle" data-i18n="template.components.subtitle">
+            Professional UI components built with enterprise standards
+          </p>
+        </div>
+
+        <!-- Button Components -->
+        <div class="component-demo">
+          <h3 class="component-demo__title">Button Components</h3>
+          <div class="component-demo__grid">
+            <button class="btn btn--primary">Primary Button</button>
+            <button class="btn btn--secondary">Secondary Button</button>
+            <button class="btn btn--outline">Outline Button</button>
+            <button class="btn btn--ghost">Ghost Button</button>
+            <button class="btn btn--primary btn--large">Large Button</button>
+            <button class="btn btn--primary btn--small">Small Button</button>
+          </div>
+        </div>
+
+        <!-- Card Components -->
+        <div class="component-demo">
+          <h3 class="component-demo__title">Card Components</h3>
+          <div class="card-grid">
+            <article class="feature-card">
+              <div class="feature-card__image">
+                <img src="https://images.unsplash.com/photo-1566430810401-a7c9ba3129fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Museum interior" loading="lazy">
+              </div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Village Museum</h3>
+                <p class="feature-card__description">
+                  Discover the rich history and cultural heritage of Helstein Village through our extensive collection of artifacts and exhibits.
+                </p>
+                <a href="#" class="feature-card__link">Learn More</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-card__image">
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Traditional crafts" loading="lazy">
+              </div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Artisan Workshops</h3>
+                <p class="feature-card__description">
+                  Experience traditional craftsmanship through hands-on workshops led by master artisans using time-honored techniques.
+                </p>
+                <a href="#" class="feature-card__link">Book Workshop</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-card__image">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cultural events" loading="lazy">
+              </div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Cultural Events</h3>
+                <p class="feature-card__description">
+                  Join us for seasonal festivals, traditional celebrations, and cultural events that bring the community together.
+                </p>
+                <a href="#" class="feature-card__link">View Events</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Form Components -->
+        <div class="component-demo">
+          <h3 class="component-demo__title">Form Components</h3>
+          <form class="form-example">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit Form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner__content">
+            <h2 class="cta-banner__title" data-i18n="template.cta.title">
+              Ready to Experience Helstein Village?
+            </h2>
+            <p class="cta-banner__subtitle" data-i18n="template.cta.subtitle">
+              Discover our museums, workshops, and cultural events. Plan your visit today.
+            </p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="tourism.html" class="btn btn--primary btn--large" data-i18n="template.cta.visit">
+              Plan Your Visit
+            </a>
+            <a href="contacts.html" class="btn btn--outline btn--large" data-i18n="template.cta.contact">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Professional Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__container">
+      <div class="site-footer__content">
+        <div class="site-footer__section">
+          <h3 class="site-footer__title">Helstein Village</h3>
+          <p class="site-footer__description" data-i18n="footer.description">
+            Discover the heart of Transylvania through our rich cultural heritage, traditional crafts, and authentic village experience.
+          </p>
+          <div class="site-footer__social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.611-3.197-1.559-.748-.948-1.073-2.162-.912-3.359.322-2.388 2.354-4.233 4.781-4.233 1.297 0 2.448.611 3.197 1.559.748.948 1.073 2.162.912 3.359-.322 2.388-2.354 4.233-4.781 4.233z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__section">
+          <h4 class="site-footer__subtitle" data-i18n="footer.explore.title">Explore</h4>
+          <ul class="site-footer__links">
+            <li><a href="tourism.html" data-i18n="footer.explore.museums">Museums</a></li>
+            <li><a href="tourism-museums.html" data-i18n="footer.explore.workshops">Workshops</a></li>
+            <li><a href="artists.html" data-i18n="footer.explore.artisans">Artisans</a></li>
+            <li><a href="events.html" data-i18n="footer.explore.events">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__section">
+          <h4 class="site-footer__subtitle" data-i18n="footer.visit.title">Visit</h4>
+          <ul class="site-footer__links">
+            <li><a href="contacts.html" data-i18n="footer.visit.contact">Contact Us</a></li>
+            <li><a href="#" data-i18n="footer.visit.directions">Directions</a></li>
+            <li><a href="#" data-i18n="footer.visit.hours">Opening Hours</a></li>
+            <li><a href="#" data-i18n="footer.visit.parking">Parking Info</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__section">
+          <h4 class="site-footer__subtitle" data-i18n="footer.connect.title">Connect</h4>
+          <ul class="site-footer__links">
+            <li><a href="stories.html" data-i18n="footer.connect.stories">Stories</a></li>
+            <li><a href="#" data-i18n="footer.connect.newsletter">Newsletter</a></li>
+            <li><a href="#" data-i18n="footer.connect.community">Community</a></li>
+            <li><a href="#" data-i18n="footer.connect.volunteer">Volunteer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="site-footer__copyright">
+          <p data-i18n="footer.copyright">© 2024 Helstein Village. All rights reserved.</p>
+        </div>
+        <div class="site-footer__legal">
+          <a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.legal.terms">Terms of Service</a>
+          <a href="#" data-i18n="footer.legal.accessibility">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Performance and Analytics -->
+  <script>
+    // Critical CSS loading fallback
+    if (!window.CSS || !CSS.supports('display', 'grid')) {
+      document.documentElement.className += ' no-css-grid';
+    }
+    
+    // Reduced motion detection
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.className += ' reduced-motion';
+    }
+  </script>
+</body>
+</html>

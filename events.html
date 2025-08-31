@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Helstein Village - Events</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link rel="stylesheet" href="assets/css/helestein.css" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script defer src="assets/js/helestein.js"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #0d7ff2;
+      --secondary-color: #f0f2f5;
+      --text-primary: #111418;
+      --text-secondary: #60758a;
+    }
+    .active-nav {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+  </style>
+  <style>
+    :root { --primary: #007aff; --primary-600: #0a84ff; --text: #111418; }
+    html, body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; color: var(--text); }
+    h1,h2,h3,h4,h5,h6 { font-weight: 700; letter-spacing: -0.015em; }
+    .btn-ios, .btn-ios-ghost, button { position:relative; display:inline-flex; align-items:center; justify-content:center; border-radius:9999px; font-weight:700; line-height:1.2; -webkit-tap-highlight-color:transparent; transition: transform .08s ease, box-shadow .2s ease, background .2s ease; }
+    .btn-ios { color:#fff; padding:.625rem 1rem; background:linear-gradient(180deg,#5eb1ff 0%, var(--primary-600) 55%, #0066d6 100%); box-shadow:0 6px 14px rgba(0,122,255,.35), inset 0 1px 0 rgba(255,255,255,.6), inset 0 -1px 0 rgba(0,0,0,.12); }
+    .btn-ios:hover { background:linear-gradient(180deg,#7bc0ff 0%, var(--primary-600) 55%, #0060c9 100%); }
+    .btn-ios:active { transform:translateY(1px); box-shadow:0 3px 10px rgba(0,122,255,.25); }
+    .btn-ios-ghost { color:var(--primary); padding:.625rem 1rem; background:rgba(0,122,255,0.08); box-shadow: inset 0 0 0 1px rgba(0,122,255,0.35); }
+    .btn-ios-ghost:hover { background:rgba(0,122,255,0.12); box-shadow: inset 0 0 0 1px rgba(0,122,255,0.45); }
+    a.btn-ios, a.btn-ios-ghost { text-decoration:none; }
+  /* Unified nav */
+  .nav-link { font-size:.875rem; font-weight:600; color:#111827; transition: color .2s ease; display:inline-flex; align-items:center; gap:.25rem; }
+  .nav-link:hover { color:#0f172a; }
+  .nav-active { text-decoration: underline; text-underline-offset:6px; }
+  .tourism-menu:hover .tourism-submenu { display:block; }
+  .tourism-submenu .submenu-item { display:block; padding:.5rem 1rem; font-size:.875rem; color:#374151; }
+  .tourism-submenu .submenu-item:hover { background:#f3f4f6; color:#111827; }
+  .tourism-submenu .submenu-active { background:#eef2ff; color:#1d4ed8; font-weight:700; }
+  </style>
+</head>
+<body class="bg-white font-['Noto_Sans',_sans-serif]">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+<div class="flex h-full grow flex-col">
+<header class="site-header sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md px-6 py-4 border-b border-[var(--secondary-color)]">
+  <div class="mx-auto flex max-w-7xl items-center justify-between">
+    <div class="flex items-center gap-3 text-[var(--text-primary)]">
+      <div class="size-6 text-[var(--primary-color)]"><svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 42.4379Z" fill="currentColor"></path></svg></div>
+      <a href="home.html" class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em]">Helstein Village</a>
+    </div>
+    <button class="mobile-toggle md:hidden" aria-label="Open menu" data-mobile-toggle>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+    <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+      <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
+      <div class="relative tourism-menu">
+        <a class="nav-link" href="tourism.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tourism">Tourism <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+        <div class="tourism-submenu" role="menu" aria-label="Tourism submenu">
+          <a class="submenu-item" href="tourism.html" role="menuitem" data-i18n="nav.museums">Museums</a>
+          <a class="submenu-item" href="tourism-museums.html" role="menuitem" data-i18n="nav.workshops">Workshops</a>
+          <a class="submenu-item" href="artists.html" role="menuitem" data-i18n="nav.artisans">Artisans</a>
+        </div>
+      </div>
+      <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
+      <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
+      <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button class="btn-ios-ghost btn-sm lang-btn" aria-haspopup="true" aria-expanded="false">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
+        <span class="hidden sm:inline ml-1">EN</span>
+      </button>
+    </div>
+    <div class="mobile-menu md:hidden" data-mobile-menu>
+      <a href="home.html" data-i18n="nav.home">Home</a>
+      <a href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+      <a href="tourism.html#" data-i18n="nav.museums">Museums</a>
+      <a href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
+      <a href="artists.html" data-i18n="nav.artisans">Artisans</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="stories.html" data-i18n="nav.stories">Stories</a>
+      <a href="contacts.html" data-i18n="nav.contact">Contact</a>
+      <div class="flex items-center gap-2 p-2">
+        <a href="#" data-set-lang="en" class="text-gray-700">EN</a>
+        <span class="text-gray-400">/</span>
+        <a href="#" data-set-lang="ro" class="text-gray-700">RO</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="flex-1 px-4 sm:px-10 md:px-20 lg:px-40 py-12 bg-gray-50/50">
+<div class="layout-content-container mx-auto flex max-w-7xl flex-col">
+<div class="mb-12 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-[var(--text-primary)] font-['Newsreader'] sm:text-5xl">Event Calendar</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--text-secondary)]">Discover the vibrant cultural life of Helstein Village. Join us for festivals, workshops, and more.</p>
+</div>
+<div class="flex flex-col lg:flex-row items-start justify-center gap-8 xl:gap-16 mb-16">
+<div class="w-full lg:w-auto flex flex-col sm:flex-row lg:flex-col gap-8">
+<div class="flex-1 bg-white p-6 rounded-xl shadow-md">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 rounded-full hover:bg-gray-100 transition-colors">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+</button>
+<p class="text-[var(--text-primary)] text-lg font-bold leading-tight font-['Newsreader']">July 2024</p>
+<button class="p-2 rounded-full hover:bg-gray-100 transition-colors">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center">
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Sun</p>
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Mon</p>
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Tue</p>
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Wed</p>
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Thu</p>
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Fri</p>
+<p class="text-[var(--text-secondary)] text-xs font-bold uppercase pb-2">Sat</p>
+<div class="col-start-4 h-10"></div>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">1</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">2</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">3</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">4</button>
+<button class="h-10 w-full text-white text-sm font-bold rounded-full bg-[var(--primary-color)] shadow">5</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">6</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">7</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">8</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">9</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">10</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">11</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">12</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">13</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">14</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">15</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">16</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">17</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">18</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">19</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">20</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">21</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">22</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">23</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">24</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">25</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">26</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">27</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">28</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">29</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">30</button>
+<button class="h-10 w-full text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">31</button>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="mb-8">
+<h3 class="text-3xl font-bold text-[var(--text-primary)] font-['Newsreader'] border-b-2 border-[var(--primary-color)] pb-2 mb-6">Events in July</h3>
+<div class="grid gap-8">
+<div id="pottery-workshop" class="flex flex-col md:flex-row items-stretch gap-6 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+<div class="w-full md:w-1/3 aspect-video md:aspect-square rounded-lg overflow-hidden">
+<img alt="Pottery Workshop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOFavTdYrqbrntTnvAA7Ed5-brJUmZCrutescO3fqJtKNkGZ1WbHeaE4XffBR0uT01iilVkZaoANEtwm8EClGw5AaGs1Rixu67pXkInTVX5pKHQC9hTnGMeh6iu7fLIiEJUOqcqoC5FmfDb0kFW8Ap5S3YdBFRQYqwfscSmyhwb2ahyZYwpoANIwJ4jb4Y0spBifpt2Ffm2hvjORbWchbxdukGHLYbF7-Zf_SQ1sidyX9L6A_AIDUPlm1tibb0czbOYfnDnF4dIG0"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-sm text-[var(--text-secondary)] mb-1">July 5, 2024 | 10:00 AM - 4:00 PM</p>
+<h4 class="text-xl font-bold text-[var(--text-primary)] font-['Newsreader'] mb-2">Traditional Pottery Workshop</h4>
+<p class="text-[var(--text-secondary)] text-sm mb-4">Learn the ancient art of pottery with local artisans. All materials provided.</p>
+<a class="btn-ios" href="events.html#pottery-workshop">Learn More</a>
+</div>
+</div>
+<div id="solstice" class="flex flex-col md:flex-row items-stretch gap-6 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+<div class="w-full md:w-1/3 aspect-video md:aspect-square rounded-lg overflow-hidden">
+<img alt="Summer Solstice Festival" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKbLMaw46D4CVVU9-qDVkat8lDu_YauOYAR4DQb5rlpSaciSD-udXSb_cLPZVahcBOt_MedK1ic0FFTeR_57sqnzoF20VtZc-iqTiXS0OkKFuFSzCr5Ep4KcP57OqZLWkOMdVJKc9-70KvwN5F59nD0uGSLlG08xmETgFVO37NJYUyd_R2SAxPt_x1-woCrbPCbUWgFIRi22jYcdAE4JZWJyF9NTXjinRqE-KXlWgNiv93R_ZTq0wfdU2NumJ2wDbDLFAYTxxt2gI"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-sm text-[var(--text-secondary)] mb-1">July 21, 2024 | 6:00 PM onwards</p>
+<h4 class="text-xl font-bold text-[var(--text-primary)] font-['Newsreader'] mb-2">Summer Solstice Festival</h4>
+<p class="text-[var(--text-secondary)] text-sm mb-4">Celebrate the longest day of the year with music, dance, and traditional rituals.</p>
+<a class="btn-ios" href="events.html#solstice">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16">
+<h3 class="text-3xl font-bold text-[var(--text-primary)] font-['Newsreader'] border-b-2 border-[var(--primary-color)] pb-2 mb-6">Upcoming in August</h3>
+<div class="grid gap-8">
+<div id="village-fair" class="flex flex-col md:flex-row items-stretch gap-6 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+<div class="w-full md:w-1/3 aspect-video md:aspect-square rounded-lg overflow-hidden">
+<img alt="Village Fair" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX5q-tn5Quq6bZFL13SU-zLQIoJaiO69YyUnWu2HlbZ9oPpgUdKknZEeVZOSm7kYI2Icc0RFMnc4bm-Ff9fg6KDf3402PZum7palyKWZQo7XP8e2tnFYXTwcFew1FWbgC7PeAVZ4wMzK-cNub8qBaTotumjS84lUCZQKLf5B-jhKy0SoV8f_EyWE4HvKIXyFFJESeBAiDtXAWboK-R3Nc1JjF8fg1HDxfwIEk3SnhaXHhb2YkeTLZYrZ6eetSrsDR0vacrCeNsxW4"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-sm text-[var(--text-secondary)] mb-1">August 10-12, 2024 | All Day</p>
+<h4 class="text-xl font-bold text-[var(--text-primary)] font-['Newsreader'] mb-2">Helstein Village Fair</h4>
+<p class="text-[var(--text-secondary)] text-sm mb-4">A showcase of local crafts, food, and culture. Fun for the whole family.</p>
+<a class="btn-ios" href="events.html#village-fair">Learn More</a>
+</div>
+</div>
+<div id="photo-workshop" class="flex flex-col md:flex-row items-stretch gap-6 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+<div class="w-full md:w-1/3 aspect-video md:aspect-square rounded-lg overflow-hidden">
+<img alt="Photography Workshop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWylt-HjELOjGXhl9OSCBUqkbYOqpOkp-xNABdPmXLN60HB9SEo7rF5f1LFyusY5ledtxByWK0V8ZhakOScBNAD8zUCJjISENxe2GHwNflEI9DcBinTGdWrE9p5uYEi4My9JF3nly-Whj4Ip4Pk5miTULCWdaE7ZBUXcN0RNpDeZlNmEuvGnkmOQGT5Qst746MnXBF3yGR4KfW9h3ltilxfJUWTFFgDS5A12f85QViyl25RjTzv4C4Y6dWIw6Huk8mCCr45q3xtbU"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-sm text-[var(--text-secondary)] mb-1">August 25, 2024 | 9:00 AM - 1:00 PM</p>
+<h4 class="text-xl font-bold text-[var(--text-primary)] font-['Newsreader'] mb-2">Photography Workshop</h4>
+<p class="text-[var(--text-secondary)] text-sm mb-4">Capture the beauty of Helstein Village with professional guidance.</p>
+<a class="btn-ios" href="events.html#photo-workshop">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<!-- Shared behaviors loaded via assets/js/helestein.js -->
+
+</body></html>

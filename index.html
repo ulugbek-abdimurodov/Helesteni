@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helesteni Village - Discover the Heart of Transylvania</title>
+    <meta name="description" content="Experience the rich cultural heritage and breathtaking landscapes of Helesteni Village in Transylvania. Explore museums, workshops, artisans, events, and stories." />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Professional CSS Architecture -->
+    <link rel="stylesheet" href="assets/css/design-system.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <!-- Enhanced JavaScript Application -->
+    <script defer src="assets/js/app.js"></script>
+    
+    <!-- GitHub Pages optimization -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Helesteni Village">
+    <meta property="og:title" content="Helesteni Village - Discover the Heart of Transylvania">
+    <meta property="og:description" content="Experience the rich cultural heritage and breathtaking landscapes of Helesteni Village in Transylvania.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/Helesteni/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="bg-neutral-50">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Professional Site Header -->
+    <header class="site-header site-header--hero" role="banner">
+        <div class="site-header__container">
+            <!-- Brand Identity -->
+            <div class="site-header__brand">
+                <svg class="site-header__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <a href="index.html" class="site-header__title">Helesteni Village</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Primary Navigation -->
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
+                
+                <div class="tourism-dropdown">
+                    <a class="nav-link dropdown-trigger" href="tourism.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tourism">
+                        Tourism
+                        <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        </svg>
+                    </a>
+                    <div class="tourism-dropdown-menu" role="menu" aria-label="Tourism options">
+                        <a class="dropdown-item" href="tourism.html" role="menuitem" data-i18n="nav.museums">Museums</a>
+                        <a class="dropdown-item" href="tourism-museums.html" role="menuitem" data-i18n="nav.workshops">Workshops</a>
+                        <a class="dropdown-item" href="artists.html" role="menuitem" data-i18n="nav.artisans">Artisans</a>
+                    </div>
+                </div>
+                
+                <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
+                <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
+                <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
+            </nav>
+
+            <!-- Language Controls -->
+            <div class="language-controls">
+                <button class="language-btn" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu">
+                    <svg class="language-icon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true">
+                        <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path>
+                    </svg>
+                    <span class="language-text">EN</span>
+                </button>
+                <div id="language-menu" class="language-menu" role="menu" aria-label="Language options">
+                    <a class="language-option" href="#" data-set-lang="en" role="menuitem">EN</a>
+                    <a class="language-option" href="#" data-set-lang="ro" role="menuitem">RO</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+            <a class="mobile-menu__item" href="home.html" data-i18n="nav.home">Home</a>
+            <a class="mobile-menu__item" href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+            <a class="mobile-menu__item mobile-menu__item--sub" href="tourism.html" data-i18n="nav.museums">Museums</a>
+            <a class="mobile-menu__item mobile-menu__item--sub" href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
+            <a class="mobile-menu__item mobile-menu__item--sub" href="artists.html" data-i18n="nav.artisans">Artisans</a>
+            <a class="mobile-menu__item" href="events.html" data-i18n="nav.events">Events</a>
+            <a class="mobile-menu__item" href="stories.html" data-i18n="nav.stories">Stories</a>
+            <a class="mobile-menu__item" href="contacts.html" data-i18n="nav.contact">Contact</a>
+            <div class="mobile-menu__languages">
+                <a href="#" data-set-lang="en" class="mobile-menu__lang">EN</a>
+                <span class="mobile-menu__lang-separator">/</span>
+                <a href="#" data-set-lang="ro" class="mobile-menu__lang">RO</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="hero hero--fullscreen" role="main">
+        <div class="hero__background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6eJFjoXxRcfMDXmJrBgnLiIZl5dRwB6AxCl6smugYf3hxLgKZmK7d1DY5F9szom_OHYQEBRcPXl8Xa9-kmyWt8n68IZygyiy_lzqV3oW6IsCou62-nZgsOXjkuMpWsXFXckGkGHu1HYlpqqYy9TGjNuNUh2KmoIjN1mCTUDRaBYSK5f0i_h3kwxeCnvBvhzdmSiB_z_QZvEJ7JSyEX84M2UGgPc5-SMKpjwoNLtrDluBLjiURi3trH3uy0BoFNnSIigasoszUj4o');"></div>
+        <div class="hero__content">
+            <h1 class="hero__title animate-fade-in-down" data-i18n="home.hero.title">
+                Discover the Heart of Transylvania
+            </h1>
+            <p class="hero__subtitle animate-fade-in-up" data-i18n="home.hero.subtitle">
+                Experience the rich cultural heritage and breathtaking landscapes of Helesteni Village, a hidden gem nestled in the Romanian countryside.
+            </p>
+            <div class="hero__actions animate-fade-in-up">
+                <a href="tourism.html" class="btn btn--primary btn--large" data-i18n="home.cta.explore">
+                    Explore Museums
+                </a>
+                <a href="tourism-museums.html" class="btn btn--secondary btn--large" data-i18n="home.cta.book">
+                    Book a Workshop
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- GitHub Pages Analytics -->
+    <script>
+        // Simple analytics for GitHub Pages
+        if (window.location.hostname.includes('github.io')) {
+            console.log('Helesteni Village - GitHub Pages deployment');
+        }
+    </script>
+</body>
+</html>

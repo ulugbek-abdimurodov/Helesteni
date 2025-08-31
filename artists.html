@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helstein Village Artisans</title>
+  <meta name="description" content="Meet the artisans of Helstein Village: potters, weavers, woodcarvers, and more." />
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <link rel="stylesheet" href="assets/css/helestein.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script defer src="assets/js/helestein.js"></script>
+  <style>
+    :root{ --primary:#d47311 }
+    .submenu-active{ background:#fff7ed;color:#9a3412;font-weight:700 }
+  </style>
+</head>
+<body class="bg-white text-primary" data-theme="artists">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="flex-grow">
+<header class="site-header sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-secondary-color">
+  <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 relative">
+    <div class="flex items-center gap-3">
+      <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path></svg>
+      <a href="home.html" class="text-2xl font-bold tracking-tight">Helstein Village</a>
+    </div>
+    <button class="mobile-toggle md:hidden" aria-label="Open menu" data-mobile-toggle>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+    <nav class="hidden md:flex items-center gap-8 font-sans" aria-label="Primary">
+      <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
+      <div class="relative tourism-menu">
+        <a class="nav-link" href="tourism.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tourism">Tourism
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        </a>
+        <div class="tourism-submenu" role="menu" aria-label="Tourism submenu">
+          <a class="submenu-item" href="tourism.html" role="menuitem" data-i18n="nav.museums">Museums</a>
+          <a class="submenu-item" href="tourism-museums.html" role="menuitem" data-i18n="nav.workshops">Workshops</a>
+          <a class="submenu-item" href="artists.html" role="menuitem" data-i18n="nav.artisans">Artisans</a>
+        </div>
+      </div>
+      <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
+      <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
+      <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <button class="btn-ios-ghost btn-sm lang-btn" aria-haspopup="true" aria-expanded="false">
+        <svg fill="currentColor" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
+        <span class="hidden sm:inline">EN</span>
+      </button>
+      <div class="h-10 w-10 rounded-full bg-cover bg-center ring-2 ring-offset-2 ring-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdyJItKPjcdAcgeV1IH3C7FgOpX5_lCcLr5gQuzMXl_p5LuLRUsC2GtLDllKQVFLknVq1il7_y8JENiqTOpho18Hvu-GxID6LMaz8DBqPvFz9KQw5U-cczDpjgh-q0oENdS1PjsVc4iXFLaAr_u5XMm4gYSNoWoJ6PnPyow3RPmqKYb-ivf0PyW1OhiupYWkgv-nndleBAJ3BMxwTOkD-JE1fsCm7ZOclSX-JLB09NSoma2bA3MSMurNm6km3RZdhF_ZHK9oN02NE");'></div>
+    </div>
+    <div class="mobile-menu md:hidden" data-mobile-menu>
+      <a href="home.html" data-i18n="nav.home">Home</a>
+      <a href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+      <a href="tourism.html#" data-i18n="nav.museums">Museums</a>
+      <a href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
+      <a href="artists.html" data-i18n="nav.artisans">Artisans</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="stories.html" data-i18n="nav.stories">Stories</a>
+      <a href="contacts.html" data-i18n="nav.contact">Contact</a>
+      <div class="flex items-center gap-2 p-2">
+        <a href="#" data-set-lang="en" class="text-gray-700">EN</a>
+        <span class="text-gray-400">/</span>
+        <a href="#" data-set-lang="ro" class="text-gray-700">RO</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Meet Our Local Artisans</h2>
+<p class="mt-4 text-lg text-secondary max-w-2xl mx-auto">Discover the talented craftspeople who keep the traditions of Helstein Village alive. Each artisan brings a unique story and skill to our community.</p>
+</div>
+<div class="mb-8">
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+<svg class="h-5 w-5 text-text-muted" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="font-sans form-input w-full rounded-md border-gray-300 bg-white py-3 pl-11 pr-4 text-primary shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder:text-text-muted" placeholder="Search for artisans or specialties..." value=""/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<div class="group flex flex-col overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+<img alt="Elena Popescu" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGLGyrRAtYESp2h3ib9OSGTcNztOI7Cag3LN0xjsYLpEXgVMHoMHaOpzbFED7dFyUOFEblcm_eytLig9ZGADhLkQXfJuDba5T4Vbt4vPJPpgdNo6Nr2NGHVcj7C3h1jFiS2Sesvz9RU-7wqXiMxVwoKm80vjYU68YZlm7bEqKZmZ-PaVS8A5UQ57UWN-zUHGdeb3c1DeKDfEoQ_KXZmVizxpBZzGnohd786EHON2MzX0Z-HDRj71KjNrYNaFm9Jn7qKneP--LqK74"/>
+</div>
+<div class="p-4 bg-white flex-1">
+<h3 class="text-xl font-bold text-primary">Elena Popescu</h3>
+<p class="font-sans text-sm font-medium text-[var(--primary-color)]">Potter</p>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+<img alt="Mihai Ionescu" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD4axN3T-Y7KvyoCSsaTUZYisxkfVqwjFepZPkoGKXeGEqePAPpqyU0yB3D3lv6RvnhgtQ7xtrcwVNG6mAigtg_acfu6ZetzKkqnD8_UtHKYy19ehVlkYEnfW6ftdpA9TXVTlu7ACjYwiEyBEuGAVOeCnsVvO_gD2pDfIyS1f5Y6F65zefGHRWDDCuQw7jvWgNQkcq7VMmB0I5sXkP-Avu_UM1BRevJvXuMr-YPPnawPNV55dUefaUEVfG_9kH_M3JFW22c3zUDA4"/>
+</div>
+<div class="p-4 bg-white flex-1">
+<h3 class="text-xl font-bold text-primary">Mihai Ionescu</h3>
+<p class="font-sans text-sm font-medium text-[var(--primary-color)]">Woodcarver</p>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+<img alt="Ana Vasilescu" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoJ6mc1n3-FylJUghC10htVLd7mYj4rEhLPaip-4RW7xMaRtlRy7Vdax-D98iq83-miHFFk1zXOwjyXgsE4g-4HXBc7c5ZINS4mpAGhWigl5Cz2kP4zqg82286uhosuABQA034z4NERtQGXZMoqda8yYgK89gcpO9hvf6NFiComvB32WxYP7rTBacAc_GJTzqYo0Q_e6Sm-coVvxOYWHFF09gHh59n_y1kwFAElSCpMO7V0bs3WUG4o3fGIEjq10e3yE1j4krZlWE"/>
+</div>
+<div class="p-4 bg-white flex-1">
+<h3 class="text-xl font-bold text-primary">Ana Vasilescu</h3>
+<p class="font-sans text-sm font-medium text-[var(--primary-color)]">Weaver</p>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+<img alt="Ion Georgescu" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbABOE1PRV0g3nLPCQnrCRjXg-V7dZXBp9KB4Z8YCM0ZkA2_7_dNBP48PvId90UfWHlSqTQ1FvH7R8kXkgAclzo0BpKqw9XjddH8WjcE6DRt3zF4Z23YgblTUGvGlHFXQWbiswmcmP_CUCMsfvDi4VCmZq7kyCZ_e4U8g6jrNQTGMSMoAVd9DmMyniR_ldKexLDrCq0ROrPFGTT21_yCSLjb_U1Jw0zuJreN4dTudWzbbrqTmnuey-oA1mq8mjbaRSYx81qJVzeOM"/>
+</div>
+<div class="p-4 bg-white flex-1">
+<h3 class="text-xl font-bold text-primary">Ion Georgescu</h3>
+<p class="font-sans text-sm font-medium text-[var(--primary-color)]">Blacksmith</p>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+<img alt="Maria Dumitrescu" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0CBEdSnnEnizyvKZzjX1DfTYjLEeju1crk2UrECB-F7oX96E5et6UabpqPOHglUZdqgSntGWMPBJ7ZRNtThmBf6C-dQCrU7F7IkSIfqFRlW2NI5Ig9i2fO3glKUVadbYGvpfFXiGamQ86BbLXDvntsseWtZzybTaKluqIB5zTdntTAZc1WS8EiVghc_J00u7n44iPWqvrQIJPvicvYJfxcSQl7APdQ9qk3TpomgkZVCpvH9M2Ef5zALXsdeit7T9VNn8xEntxwTQ"/>
+</div>
+<div class="p-4 bg-white flex-1">
+<h3 class="text-xl font-bold text-primary">Maria Dumitrescu</h3>
+<p class="font-sans text-sm font-medium text-[var(--primary-color)]">Ceramicist</p>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+<img alt="Alexandru Marin" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRqdG9zp4nSHH6JLBQuZpC7nBOxxNooAPPtrzbenoH3sEy13EJsOANqSLgTOGMM9WM-y2A1eodUflUV5yHIqAecSdXfq0sc9Lf4TRKpYqJ9tyXk3964phHqNQbNkYOctkTo_7jYFFIcHJrWOVg3EoMZxxJ-tNwnOlzo-UlyvVM11hhAIYtpTD0zy-0iyP6YJBKRWC1i56Wigb2FDFjVURTTatsoXFHAblpteYduQPqoUPV5DrMVxCTq1Z-DDq9YR86uxyK4y9t_9w"/>
+</div>
+<div class="p-4 bg-white flex-1">
+<h3 class="text-xl font-bold text-primary">Alexandru Marin</h3>
+<p class="font-sans text-sm font-medium text-[var(--primary-color)]">Painter</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<!-- Shared behaviors loaded via assets/js/helestein.js -->
+
+</body></html>

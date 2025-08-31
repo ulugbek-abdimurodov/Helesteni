@@ -1,0 +1,18 @@
+{
+  "nav.home": "Home",
+  "nav.tourism": "Tourism",
+  "nav.museums": "Museums",
+  "nav.workshops": "Workshops",
+  "nav.artisans": "Artisans",
+  "nav.events": "Events",
+  "nav.stories": "Stories",
+  "nav.contact": "Contact",
+  "home.hero.title": "Discover the Heart of Transylvania",
+  "home.hero.subtitle": "Experience the rich cultural heritage and breathtaking landscapes of Helstein Village, a hidden gem nestled in the Romanian countryside.",
+  "home.cta.explore": "Explore Museums",
+  "home.cta.book": "Book a Workshop",
+  "contact.title": "Contact Us",
+  "contact.phone": "Phone",
+  "contact.email": "Email",
+  "contact.address": "Address"
+}
