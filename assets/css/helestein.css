@@ -7,67 +7,312 @@
 */
 
 /* 1) CSS Reset (lightweight) */
-*,*::before,*::after{box-sizing:border-box}
-html{line-height:1.5;-webkit-text-size-adjust:100%}
-body{margin:0}
-img{max-width:100%;height:auto;display:block}
-button,input,select,textarea{font:inherit}
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit
+}
 
 /* 2) CSS Custom Properties */
-:root{
-  --primary:#007aff; --primary-600:#0a84ff; --text:#111418; --text-secondary:#606f7b; --bg:#ffffff;
+:root {
+    --primary: #007aff;
+    --primary-600: #0a84ff;
+    --text: #111418;
+    --text-secondary: #606f7b;
+    --bg: #ffffff;
 }
 
 /* 3) Base Typography + Landmarks */
-html,body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans','Apple Color Emoji','Segoe UI Emoji';color:var(--text);background:var(--bg)}
-h1,h2,h3,h4,h5,h6{font-weight:700;letter-spacing:-.015em}
-main,nav,header,footer{display:block}
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+    color: var(--text);
+    background: var(--bg)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: -.015em
+}
+
+main,
+nav,
+header,
+footer {
+    display: block
+}
 
 /* 4) Buttons (iOS mirror style) */
-.btn-ios,.btn-ios-ghost,button{position:relative;display:inline-flex;align-items:center;justify-content:center;border-radius:9999px;font-weight:700;line-height:1.2;-webkit-tap-highlight-color:transparent;transition:transform .08s ease,box-shadow .2s ease,background .2s ease}
-.btn-ios{color:#fff;padding:.625rem 1rem;background:linear-gradient(180deg,#66b9ff 0%,var(--primary-600) 52%,#005fcb 100%);box-shadow:0 8px 18px rgba(0,122,255,.35),inset 0 1px 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(0,0,0,.14)}
-.btn-ios:hover{background:linear-gradient(180deg,#84c7ff 0%,var(--primary-600) 50%,#0059bd 100%)}
-.btn-ios:active{transform:translateY(1px);box-shadow:0 4px 12px rgba(0,122,255,.28)}
-.btn-ios-ghost{color:var(--primary);padding:.625rem 1rem;background:linear-gradient(180deg,rgba(0,122,255,.10),rgba(0,122,255,.06));box-shadow:inset 0 0 0 1px rgba(0,122,255,.38)}
-.btn-ios-ghost:hover{background:linear-gradient(180deg,rgba(0,122,255,.14),rgba(0,122,255,.08));box-shadow:inset 0 0 0 1px rgba(0,122,255,.46)}
-.btn-sm{padding:.375rem .75rem;font-size:.875rem}
-.btn-lg{padding:.875rem 1.25rem;font-size:1rem}
-.btn-ios:before,.btn-ios-ghost:before,button:before{content:"";position:absolute;inset:1px 1px auto 1px;height:58%;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(255,255,255,.35) 60%,rgba(255,255,255,0));pointer-events:none}
+.btn-ios,
+.btn-ios-ghost,
+button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    font-weight: 700;
+    line-height: 1.2;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .08s ease, box-shadow .2s ease, background .2s ease
+}
+
+.btn-ios {
+    color: #fff;
+    padding: .625rem 1rem;
+    background: linear-gradient(180deg, #66b9ff 0%, var(--primary-600) 52%, #005fcb 100%);
+    box-shadow: 0 8px 18px rgba(0, 122, 255, .35), inset 0 1px 0 rgba(255, 255, 255, .7), inset 0 -1px 0 rgba(0, 0, 0, .14)
+}
+
+.btn-ios:hover {
+    background: linear-gradient(180deg, #84c7ff 0%, var(--primary-600) 50%, #0059bd 100%)
+}
+
+.btn-ios:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, .28)
+}
+
+.btn-ios-ghost {
+    color: var(--primary);
+    padding: .625rem 1rem;
+    background: linear-gradient(180deg, rgba(0, 122, 255, .10), rgba(0, 122, 255, .06));
+    box-shadow: inset 0 0 0 1px rgba(0, 122, 255, .38)
+}
+
+.btn-ios-ghost:hover {
+    background: linear-gradient(180deg, rgba(0, 122, 255, .14), rgba(0, 122, 255, .08));
+    box-shadow: inset 0 0 0 1px rgba(0, 122, 255, .46)
+}
+
+.btn-sm {
+    padding: .375rem .75rem;
+    font-size: .875rem
+}
+
+.btn-lg {
+    padding: .875rem 1.25rem;
+    font-size: 1rem
+}
+
+.btn-ios:before,
+.btn-ios-ghost:before,
+button:before {
+    content: "";
+    position: absolute;
+    inset: 1px 1px auto 1px;
+    height: 58%;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .35) 60%, rgba(255, 255, 255, 0));
+    pointer-events: none
+}
+
 /* Language button normalization */
-.lang-btn{height:2.5rem;padding:0 .75rem;gap:.25rem}
-.lang-btn svg{width:1rem;height:1rem;display:block}
+.lang-btn {
+    height: 2.5rem;
+    padding: 0 .75rem;
+    gap: .25rem
+}
+
+.lang-btn svg {
+    width: 1rem;
+    height: 1rem;
+    display: block
+}
 
 /* 5) Header/Nav */
-.site-header{position:sticky;top:0;z-index:50;width:100%;backdrop-filter:saturate(180%) blur(10px)}
-.nav-link{font-size:.875rem;font-weight:600;color:#111827;transition:color .2s ease;display:inline-flex;align-items:center;gap:.25rem;text-decoration:none}
-.nav-link:hover{color:#0f172a}
-.nav-active{text-decoration:underline;text-underline-offset:6px}
-.tourism-menu:hover .tourism-submenu,.tourism-menu:focus-within .tourism-submenu{display:block}
-.tourism-menu::after{content:"";position:absolute;left:0;right:0;top:100%;height:8px}
-.tourism-submenu{position:absolute;top:100%;min-width:12rem;background:#fff;border-radius:.5rem;box-shadow:0 10px 20px rgba(0,0,0,.08);padding:.5rem 0;display:none;z-index:40}
-.submenu-item{display:block;padding:.5rem 1rem;font-size:.875rem;color:#374151;text-decoration:none}
-.submenu-item:hover{background:#f3f4f6;color:#111827}
-.submenu-active{background:#eef2ff;color:#1d4ed8;font-weight:700}
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    backdrop-filter: saturate(180%) blur(10px)
+}
+
+.nav-link {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #111827;
+    transition: color .2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    text-decoration: none
+}
+
+.nav-link:hover {
+    color: #0f172a
+}
+
+.nav-active {
+    text-decoration: underline;
+    text-underline-offset: 6px
+}
+
+.tourism-menu:hover .tourism-submenu,
+.tourism-menu:focus-within .tourism-submenu {
+    display: block
+}
+
+.tourism-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 8px
+}
+
+.tourism-submenu {
+    position: absolute;
+    top: 100%;
+    min-width: 12rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+    padding: .5rem 0;
+    display: none;
+    z-index: 40
+}
+
+.submenu-item {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: .875rem;
+    color: #374151;
+    text-decoration: none
+}
+
+.submenu-item:hover {
+    background: #f3f4f6;
+    color: #111827
+}
+
+.submenu-active {
+    background: #eef2ff;
+    color: #1d4ed8;
+    font-weight: 700
+}
+
 /* Mobile menu */
-.mobile-toggle{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:.5rem;border:1px solid #e5e7eb;background:#fff}
-.mobile-toggle svg{width:1.25rem;height:1.25rem}
-.mobile-menu{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 8px 20px rgba(0,0,0,.06)}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:.75rem 1rem;color:#111827;text-decoration:none}
-.mobile-menu a:hover{background:#f3f4f6}
+.mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    border: 1px solid #e5e7eb;
+    background: #fff
+}
+
+.mobile-toggle svg {
+    width: 1.25rem;
+    height: 1.25rem
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .06)
+}
+
+.mobile-menu.open {
+    display: block
+}
+
+.mobile-menu a {
+    display: block;
+    padding: .75rem 1rem;
+    color: #111827;
+    text-decoration: none
+}
+
+.mobile-menu a:hover {
+    background: #f3f4f6
+}
 
 /* 6) Utilities */
-.container{max-width:1280px;margin:0 auto}
-.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+.container {
+    max-width: 1280px;
+    margin: 0 auto
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap
+}
+
 /* Skip link becomes visible on focus */
-.skip-link:focus{position:fixed;left:1rem;top:1rem;padding:.5rem .75rem;background:#fff;color:#111;border-radius:.375rem;box-shadow:0 2px 10px rgba(0,0,0,.15);z-index:1000;clip:auto!important;height:auto;width:auto;white-space:normal}
+.skip-link:focus {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    padding: .5rem .75rem;
+    background: #fff;
+    color: #111;
+    border-radius: .375rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    z-index: 1000;
+    clip: auto !important;
+    height: auto;
+    width: auto;
+    white-space: normal
+}
 
 /* 7) Hero support (home only) */
-.hero-section{color:#fff}
+.hero-section {
+    color: #fff
+}
 
 /* 8) Accessible focus */
-:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px
+}
 
 /* Theme overrides by section */
-[data-theme="artists"]{--primary:#d47311}
-[data-theme="artists"] .submenu-active{background:#fff7ed;color:#9a3412}
+[data-theme="artists"] {
+    --primary: #d47311
+}
+
+[data-theme="artists"] .submenu-active {
+    background: #fff7ed;
+    color: #9a3412
+}

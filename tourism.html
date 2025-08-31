@@ -1,220 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Helstein Village Museums - Discover Our Cultural Heritage</title>
-  <meta name="description" content="Explore Helstein Village museums: history, arts and crafts, archaeology, rural life, and contemporary gallery. Immerse yourself in authentic Moldova Regionn culture." />
-  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
-  
-  <!-- Preload critical resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Professional CSS Architecture -->
-  <link rel="stylesheet" href="assets/css/design-system.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  
-  <!-- Enhanced JavaScript Application -->
-  <script defer src="assets/js/app.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helstein Village Museums - Discover Our Cultural Heritage</title>
+    <meta name="description"
+        content="Explore Helstein Village museums: history, arts and crafts, archaeology, rural life, and contemporary gallery. Immerse yourself in authentic Moldova Regionn culture." />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Professional CSS Architecture -->
+    <link rel="stylesheet" href="assets/css/design-system.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+
+    <!-- Enhanced JavaScript Application -->
+    <script defer src="assets/js/app.js"></script>
 </head>
+
 <body class="bg-white text-[var(--text-primary)]">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
-<header class="site-header sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md header-light">
-  <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-4 relative">
-    <div class="flex items-center gap-3">
-      <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path></svg>
-      <a href="home.html" class="text-2xl font-bold tracking-tight">Helstein Village</a>
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+        <header class="site-header sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md header-light">
+            <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-4 relative">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <a href="home.html" class="text-2xl font-bold tracking-tight">Helstein Village</a>
+                </div>
+                <button class="mobile-toggle lg:hidden" aria-label="Open menu" data-mobile-toggle>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
+                    <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
+                    <div class="relative tourism-menu">
+                        <a class="nav-link" href="tourism.html" aria-haspopup="true" aria-expanded="false"
+                            data-i18n="nav.tourism">Tourism
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                        </a>
+                        <div class="tourism-submenu" role="menu" aria-label="Tourism submenu">
+                            <a class="submenu-item" href="tourism.html" role="menuitem"
+                                data-i18n="nav.museums">Museums</a>
+                            <a class="submenu-item" href="tourism-museums.html" role="menuitem"
+                                data-i18n="nav.workshops">Workshops</a>
+                            <a class="submenu-item" href="artists.html" role="menuitem"
+                                data-i18n="nav.artisans">Artisans</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
+                    <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
+                    <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="btn-ios-ghost btn-sm lang-btn inline-flex items-center" aria-haspopup="true"
+                        aria-expanded="false">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z">
+                            </path>
+                        </svg>
+                        <span class="hidden sm:inline ml-1">EN</span>
+                    </button>
+                </div>
+                <div class="mobile-menu lg:hidden" data-mobile-menu>
+                    <a href="home.html" data-i18n="nav.home">Home</a>
+                    <a href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+                    <a href="tourism.html#" data-i18n="nav.museums">Museums</a>
+                    <a href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
+                    <a href="artists.html" data-i18n="nav.artisans">Artisans</a>
+                    <a href="events.html" data-i18n="nav.events">Events</a>
+                    <a href="stories.html" data-i18n="nav.stories">Stories</a>
+                    <a href="contacts.html" data-i18n="nav.contact">Contact</a>
+                    <div class="flex items-center gap-2 p-2">
+                        <a href="#" data-set-lang="en" class="text-gray-700">EN</a>
+                        <span class="text-gray-400">/</span>
+                        <a href="#" data-set-lang="ro" class="text-gray-700">RO</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <div class="container mx-auto px-6 py-16">
+                <div class="mx-auto max-w-4xl text-center">
+                    <h2 class="text-5xl font-extrabold tracking-tighter text-[var(--text-primary)]">Our Museums</h2>
+                    <p class="font-sans mt-4 text-lg leading-relaxed text-[var(--text-secondary)]">
+                        Explore the rich cultural heritage of Helstein Village through its diverse museums, each
+                        offering a unique glimpse into the region's history, art, and traditions.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+                    <div id="history"
+                        class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="relative h-56 w-full">
+                            <div class="h-full w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc7ppvKB0rgXDxEZdELgtOabOgL4xkOu_DC8o70Z37haDAhykcynmFa6pY3cqQ-hXab4fcQB5N89Ry0WzU_o3arhRXdZi2AJdIN44wx9naU74NOiu24qYmKLo279xpBH2IMd8FFeVsLz5tKaUlDp-nf91GOpFEP48PalFpMrtv53ngMxLbhedYIsreqKxVjn4Hxd6vGiR8ymEs8iH3XM8-BgQGOLinzgk2Bx1zs4lLNbUKtoFd7M6I1Ok6I_YDAaPmKl5zA_nzpKY");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Helstein Village History Museum</h3>
+                                <p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">
+                                    Discover the fascinating history of Helstein Village, from its early settlements to
+                                    the present day.
+                                </p>
+                            </div>
+                            <a class="btn-ios-ghost btn-lg" href="#history">
+                                Learn More <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="arts-crafts"
+                        class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="relative h-56 w-full">
+                            <div class="h-full w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnIgqly87yqiqdvesbyCmZ4czw26yVoBGjCf8D8h05fYE7d_j3Ezc9jSnAq-1bpoKJ8sVkxZi9Dvy88oPkfRGgIsEFo2hZEYdw5vPlGFZcwCp3Q5mSeLh4VQkaBrnTRF0uG8gUFlyZ50Az4pDRVqAO4Bv0OQ3G-wAf-qaALcT1NvlcJ5K6NtlmJIrZRbmn7Jzchz5f-ONQLByjUG7ium9ycjZBjMTl8S_5fLaHVY6F9P6LupZ15-XusEOADI3LrJMrh26MT-4toxE");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Traditional Arts &amp; Crafts Museum</h3>
+                                <p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">
+                                    Explore the vibrant world of traditional arts and crafts, showcasing local artisans
+                                    and their creations.
+                                </p>
+                            </div>
+                            <a class="btn-ios-ghost btn-lg" href="#arts-crafts">
+                                Learn More <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="archaeology"
+                        class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="relative h-56 w-full">
+                            <div class="h-full w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnbLZwKah7krp1QO07FJmReeGZ1Yz2g-fGFnzHp1Yaq74RuMld-mWEGqnKdG8P2cFAh1pR0hN7t-Td22GK-fNXD5LBHo3qbFpECayP73491l8SX5P6GRCNEIT_ytV18GILK66wvpy-CMOXmoQ-AdcQNv6xsISVXCyAc0WHC6OjTlexm_XblWbHlnHEtQ8N0PJkvmPZFEoLvl08lWxAY9I3S0z5QyhtFseqwvwYmAtvaARcxpjUHAWDSOBI7xn-szCXTjYrFF_atg0");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Archaeological Museum</h3>
+                                <p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">Unearth the
+                                    archaeological treasures of Helstein Village, revealing the region's ancient past.
+                                </p>
+                            </div>
+                            <a class="btn-ios-ghost btn-lg" href="#archaeology">
+                                Learn More <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="rural-life"
+                        class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="relative h-56 w-full">
+                            <div class="h-full w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCicV3m8DntGIuA5aBu1itMXS046N__91YMhdv04Zds6Szz3fdimndpstCDVO3UaFVLsxjR-y-_LjXsVt0bR0UXmLKRO2RbEeLPKfvRswLZvzni7rTjAFL01JVtJtRvRf1cyCmMPZanMX7IcgvgcvP8xTi0lslKg9ZJA_0sqbQvcMqMyk3n6VwQe1o27U9eM0CciJMylD-sJDriT3kB9w7aqnXWTHdiB9DhS3d6QfY0_QEwfi69mGTVIzd724rYCIC7Pk-rJaDHIMY");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Museum of Rural Life</h3>
+                                <p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">Experience the charm of
+                                    rural life in Helstein Village, with exhibits on farming, customs, and daily life.
+                                </p>
+                            </div>
+                            <a class="btn-ios-ghost btn-lg" href="#rural-life">
+                                Learn More <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="gallery"
+                        class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="relative h-56 w-full">
+                            <div class="h-full w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYSZhaOAHjc0nfoR8tC0n2LP3D7lDL-16B-Aesa7Ez5oSZzDJcEE5UCKtn5bHEhe_KrRJCE1qOGct385XfEwgFOPwqwcxH_Yp7MOBzjDrc35wpdIbff-FhkV1avpiLfxoZutWuDUF0FenAGcdPqJvWDx1YvAFaMZqA0nKN6PlLDMdgwIkMBeybkug37_LEgG-wC0vK-a86AuVwLuLNpgXlSZ3SvgQMSjqe1JLjWZL3MhoHNTDrAFEnMuPSThrVp-qUW7y_tKSJsa8");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-6">
+                            <div>
+                                <h3 class="text-xl font-bold">Contemporary Art Gallery</h3>
+                                <p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">
+                                    Immerse yourself in the contemporary art scene of Helstein Village, featuring local
+                                    and international artists.
+                                </p>
+                            </div>
+                            <a class="btn-ios-ghost btn-lg" href="#gallery">
+                                Learn More <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-[var(--secondary-color)] font-sans">
+            <div class="container mx-auto px-6 py-12">
+                <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-4 lg:text-left">
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center justify-center gap-3 lg:justify-start">
+                            <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <h2 class="text-2xl font-bold text-[var(--text-primary)]">Helstein Village</h2>
+                        </div>
+                        <p class="mt-4 text-sm text-[var(--text-secondary)]">Discovering the heart of Romanian culture.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold uppercase tracking-wider text-[var(--text-primary)]">Explore</h3>
+                        <nav class="mt-4 flex flex-col gap-2">
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="home.html">Home</a>
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="stories.html">About</a>
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="tourism-museums.html">Museums</a>
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="events.html">Events</a>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3 class="font-bold uppercase tracking-wider text-[var(--text-primary)]">Legal</h3>
+                        <nav class="mt-4 flex flex-col gap-2">
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="contacts.html#privacy">Privacy Policy</a>
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="contacts.html#terms">Terms of Service</a>
+                            <a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="contacts.html">Contact Us</a>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3 class="font-bold uppercase tracking-wider text-[var(--text-primary)]">Follow Us</h3>
+                        <div class="mt-4 flex justify-center gap-4 lg:justify-start">
+                            <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="https://facebook.com" target="_blank" rel="noopener">
+                                <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="https://twitter.com" target="_blank" rel="noopener">
+                                <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)]"
+                                href="https://instagram.com" target="_blank" rel="noopener">
+                                <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-gray-300 pt-8 text-center">
+                    <p class="text-sm text-[var(--text-secondary)]">© 2024 Helstein Village. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <button class="mobile-toggle lg:hidden" aria-label="Open menu" data-mobile-toggle>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-    </button>
-    <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
-      <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
-      <div class="relative tourism-menu">
-        <a class="nav-link" href="tourism.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tourism">Tourism
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-        </a>
-        <div class="tourism-submenu" role="menu" aria-label="Tourism submenu">
-          <a class="submenu-item" href="tourism.html" role="menuitem" data-i18n="nav.museums">Museums</a>
-          <a class="submenu-item" href="tourism-museums.html" role="menuitem" data-i18n="nav.workshops">Workshops</a>
-          <a class="submenu-item" href="artists.html" role="menuitem" data-i18n="nav.artisans">Artisans</a>
-        </div>
-      </div>
-      <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
-      <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
-      <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
-    </nav>
-    <div class="flex items-center gap-4">
-      <button class="btn-ios-ghost btn-sm lang-btn inline-flex items-center" aria-haspopup="true" aria-expanded="false">
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
-        <span class="hidden sm:inline ml-1">EN</span>
-      </button>
-    </div>
-    <div class="mobile-menu lg:hidden" data-mobile-menu>
-      <a href="home.html" data-i18n="nav.home">Home</a>
-      <a href="tourism.html" data-i18n="nav.tourism">Tourism</a>
-      <a href="tourism.html#" data-i18n="nav.museums">Museums</a>
-      <a href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
-      <a href="artists.html" data-i18n="nav.artisans">Artisans</a>
-      <a href="events.html" data-i18n="nav.events">Events</a>
-      <a href="stories.html" data-i18n="nav.stories">Stories</a>
-      <a href="contacts.html" data-i18n="nav.contact">Contact</a>
-      <div class="flex items-center gap-2 p-2">
-        <a href="#" data-set-lang="en" class="text-gray-700">EN</a>
-        <span class="text-gray-400">/</span>
-        <a href="#" data-set-lang="ro" class="text-gray-700">RO</a>
-      </div>
-    </div>
-  </div>
-  </header>
-<main class="flex-1">
-<div class="container mx-auto px-6 py-16">
-<div class="mx-auto max-w-4xl text-center">
-<h2 class="text-5xl font-extrabold tracking-tighter text-[var(--text-primary)]">Our Museums</h2>
-<p class="font-sans mt-4 text-lg leading-relaxed text-[var(--text-secondary)]">
-              Explore the rich cultural heritage of Helstein Village through its diverse museums, each offering a unique glimpse into the region's history, art, and traditions.
-            </p>
-</div>
-<div class="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-<div id="history" class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-<div class="relative h-56 w-full">
-<div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc7ppvKB0rgXDxEZdELgtOabOgL4xkOu_DC8o70Z37haDAhykcynmFa6pY3cqQ-hXab4fcQB5N89Ry0WzU_o3arhRXdZi2AJdIN44wx9naU74NOiu24qYmKLo279xpBH2IMd8FFeVsLz5tKaUlDp-nf91GOpFEP48PalFpMrtv53ngMxLbhedYIsreqKxVjn4Hxd6vGiR8ymEs8iH3XM8-BgQGOLinzgk2Bx1zs4lLNbUKtoFd7M6I1Ok6I_YDAaPmKl5zA_nzpKY");'></div>
-</div>
-<div class="flex flex-1 flex-col justify-between p-6">
-<div>
-<h3 class="text-xl font-bold">Helstein Village History Museum</h3>
-<p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">
-                    Discover the fascinating history of Helstein Village, from its early settlements to the present day.
-                  </p>
-</div>
-<a class="btn-ios-ghost btn-lg" href="#history">
-                  Learn More <span class="material-icons ml-1">arrow_forward</span>
-</a>
-</div>
-</div>
-<div id="arts-crafts" class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-<div class="relative h-56 w-full">
-<div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnIgqly87yqiqdvesbyCmZ4czw26yVoBGjCf8D8h05fYE7d_j3Ezc9jSnAq-1bpoKJ8sVkxZi9Dvy88oPkfRGgIsEFo2hZEYdw5vPlGFZcwCp3Q5mSeLh4VQkaBrnTRF0uG8gUFlyZ50Az4pDRVqAO4Bv0OQ3G-wAf-qaALcT1NvlcJ5K6NtlmJIrZRbmn7Jzchz5f-ONQLByjUG7ium9ycjZBjMTl8S_5fLaHVY6F9P6LupZ15-XusEOADI3LrJMrh26MT-4toxE");'></div>
-</div>
-<div class="flex flex-1 flex-col justify-between p-6">
-<div>
-<h3 class="text-xl font-bold">Traditional Arts &amp; Crafts Museum</h3>
-<p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">
-                    Explore the vibrant world of traditional arts and crafts, showcasing local artisans and their creations.
-                  </p>
-</div>
-<a class="btn-ios-ghost btn-lg" href="#arts-crafts">
-                  Learn More <span class="material-icons ml-1">arrow_forward</span>
-</a>
-</div>
-</div>
-<div id="archaeology" class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-<div class="relative h-56 w-full">
-<div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnbLZwKah7krp1QO07FJmReeGZ1Yz2g-fGFnzHp1Yaq74RuMld-mWEGqnKdG8P2cFAh1pR0hN7t-Td22GK-fNXD5LBHo3qbFpECayP73491l8SX5P6GRCNEIT_ytV18GILK66wvpy-CMOXmoQ-AdcQNv6xsISVXCyAc0WHC6OjTlexm_XblWbHlnHEtQ8N0PJkvmPZFEoLvl08lWxAY9I3S0z5QyhtFseqwvwYmAtvaARcxpjUHAWDSOBI7xn-szCXTjYrFF_atg0");'></div>
-</div>
-<div class="flex flex-1 flex-col justify-between p-6">
-<div>
-<h3 class="text-xl font-bold">Archaeological Museum</h3>
-<p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">Unearth the archaeological treasures of Helstein Village, revealing the region's ancient past.</p>
-</div>
-<a class="btn-ios-ghost btn-lg" href="#archaeology">
-                  Learn More <span class="material-icons ml-1">arrow_forward</span>
-</a>
-</div>
-</div>
-<div id="rural-life" class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-<div class="relative h-56 w-full">
-<div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCicV3m8DntGIuA5aBu1itMXS046N__91YMhdv04Zds6Szz3fdimndpstCDVO3UaFVLsxjR-y-_LjXsVt0bR0UXmLKRO2RbEeLPKfvRswLZvzni7rTjAFL01JVtJtRvRf1cyCmMPZanMX7IcgvgcvP8xTi0lslKg9ZJA_0sqbQvcMqMyk3n6VwQe1o27U9eM0CciJMylD-sJDriT3kB9w7aqnXWTHdiB9DhS3d6QfY0_QEwfi69mGTVIzd724rYCIC7Pk-rJaDHIMY");'></div>
-</div>
-<div class="flex flex-1 flex-col justify-between p-6">
-<div>
-<h3 class="text-xl font-bold">Museum of Rural Life</h3>
-<p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">Experience the charm of rural life in Helstein Village, with exhibits on farming, customs, and daily life.</p>
-</div>
-<a class="btn-ios-ghost btn-lg" href="#rural-life">
-                  Learn More <span class="material-icons ml-1">arrow_forward</span>
-</a>
-</div>
-</div>
-<div id="gallery" class="group flex flex-col overflow-hidden rounded-md shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-<div class="relative h-56 w-full">
-<div class="h-full w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYSZhaOAHjc0nfoR8tC0n2LP3D7lDL-16B-Aesa7Ez5oSZzDJcEE5UCKtn5bHEhe_KrRJCE1qOGct385XfEwgFOPwqwcxH_Yp7MOBzjDrc35wpdIbff-FhkV1avpiLfxoZutWuDUF0FenAGcdPqJvWDx1YvAFaMZqA0nKN6PlLDMdgwIkMBeybkug37_LEgG-wC0vK-a86AuVwLuLNpgXlSZ3SvgQMSjqe1JLjWZL3MhoHNTDrAFEnMuPSThrVp-qUW7y_tKSJsa8");'></div>
-</div>
-<div class="flex flex-1 flex-col justify-between p-6">
-<div>
-<h3 class="text-xl font-bold">Contemporary Art Gallery</h3>
-<p class="font-sans mt-2 text-sm text-[var(--text-secondary)]">
-                    Immerse yourself in the contemporary art scene of Helstein Village, featuring local and international artists.
-                  </p>
-</div>
-<a class="btn-ios-ghost btn-lg" href="#gallery">
-                  Learn More <span class="material-icons ml-1">arrow_forward</span>
-</a>
-</div>
-</div>
-<div class="hidden lg:block"></div>
-</div>
-</div>
-</main>
-<footer class="bg-[var(--secondary-color)] font-sans">
-<div class="container mx-auto px-6 py-12">
-<div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-4 lg:text-left">
-<div class="lg:col-span-1">
-<div class="flex items-center justify-center gap-3 lg:justify-start">
-<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
-</svg>
-<h2 class="text-2xl font-bold text-[var(--text-primary)]">Helstein Village</h2>
-</div>
-<p class="mt-4 text-sm text-[var(--text-secondary)]">Discovering the heart of Romanian culture.</p>
-</div>
-<div>
-<h3 class="font-bold uppercase tracking-wider text-[var(--text-primary)]">Explore</h3>
-<nav class="mt-4 flex flex-col gap-2">
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="home.html">Home</a>
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="stories.html">About</a>
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="tourism-museums.html">Museums</a>
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="events.html">Events</a>
-</nav>
-</div>
-<div>
-<h3 class="font-bold uppercase tracking-wider text-[var(--text-primary)]">Legal</h3>
-<nav class="mt-4 flex flex-col gap-2">
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="contacts.html#privacy">Privacy Policy</a>
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="contacts.html#terms">Terms of Service</a>
-<a class="text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="contacts.html">Contact Us</a>
-</nav>
-</div>
-<div>
-<h3 class="font-bold uppercase tracking-wider text-[var(--text-primary)]">Follow Us</h3>
-<div class="mt-4 flex justify-center gap-4 lg:justify-start">
-<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="https://facebook.com" target="_blank" rel="noopener">
-<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
-</svg>
-</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="https://twitter.com" target="_blank" rel="noopener">
-<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
-</svg>
-</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="https://instagram.com" target="_blank" rel="noopener">
-<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
-</svg>
-</a>
-</div>
-</div>
-</div>
-<div class="mt-12 border-t border-gray-300 pt-8 text-center">
-<p class="text-sm text-[var(--text-secondary)]">© 2024 Helstein Village. All rights reserved.</p>
-</div>
-</div>
-</footer>
-</div>
 
-<!-- Shared behaviors loaded via assets/js/helestein.js -->
+    <!-- Shared behaviors loaded via assets/js/helestein.js -->
 
-</body></html>
+</body>
+
+</html>

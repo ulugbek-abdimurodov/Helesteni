@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Test Page - Helstein Village</title>
-    
+
     <!-- Professional CSS Architecture -->
     <link rel="stylesheet" href="assets/css/design-system.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    
+
     <!-- Enhanced JavaScript Application -->
     <script defer src="assets/js/app.js"></script>
 </head>
+
 <body class="bg-neutral-50">
     <h1>Test Page</h1>
     <p>This is a simple test to verify CSS and JS loading.</p>
-    
+
     <div style="margin: 20px; padding: 20px; background: white; border-radius: 8px;">
         <h2>Button Tests</h2>
         <button class="btn btn--primary">Primary Button</button>
         <button class="btn btn--secondary">Secondary Button</button>
         <button class="btn btn--primary btn--large">Large Primary</button>
     </div>
-    
+
     <div style="margin: 20px; padding: 20px; background: white; border-radius: 8px;">
         <h2>Navigation Test</h2>
         <nav class="primary-nav">
@@ -30,7 +32,7 @@
             <a class="nav-link" href="tourism.html">Tourism</a>
         </nav>
     </div>
-    
+
     <div style="margin: 20px; padding: 20px; background: white; border-radius: 8px;">
         <h2>Hero Test</h2>
         <div class="hero" style="min-height: 200px;">
@@ -40,10 +42,11 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         console.log('Test page loaded successfully');
         console.log('CSS custom properties test:', getComputedStyle(document.documentElement).getPropertyValue('--color-primary-500'));
     </script>
 </body>
+
 </html>

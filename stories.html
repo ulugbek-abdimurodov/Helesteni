@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Helstein Village - Stories</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<link rel="stylesheet" href="assets/css/helestein.css" />
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script defer src="assets/js/helestein.js"></script>
-<style type="text/tailwindcss">
-      :root {
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>Helstein Village - Stories</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/helestein.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script defer src="assets/js/helestein.js"></script>
+    <style type="text/tailwindcss">
+        :root {
         --primary-color: #d46211;
         --secondary-color: #f7f5f2;
         --text-primary: #1c1917;
@@ -18,171 +22,277 @@
       }
     </style>
     <style>
-      :root { --text: #1c1917; }
-      html, body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; color: var(--text); }
-      h1,h2,h3,h4,h5,h6 { font-weight: 700; letter-spacing: -0.015em; }
-  /* Unified nav */
-  .nav-link { font-size:.875rem; font-weight:600; color:#111827; transition: color .2s ease; display:inline-flex; align-items:center; gap:.25rem; }
-  .nav-link:hover { color:#0f172a; }
-  .nav-active { text-decoration: underline; text-underline-offset:6px; }
-  .tourism-menu:hover .tourism-submenu { display:block; }
-  .tourism-submenu .submenu-item { display:block; padding:.5rem 1rem; font-size:.875rem; color:#374151; }
-  .tourism-submenu .submenu-item:hover { background:#f3f4f6; color:#111827; }
-  .tourism-submenu .submenu-active { background:#eef2ff; color:#1d4ed8; font-weight:700; }
+        :root {
+            --text: #1c1917;
+        }
+
+        html,
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+            color: var(--text);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            letter-spacing: -0.015em;
+        }
+
+        /* Unified nav */
+        .nav-link {
+            font-size: .875rem;
+            font-weight: 600;
+            color: #111827;
+            transition: color .2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: .25rem;
+        }
+
+        .nav-link:hover {
+            color: #0f172a;
+        }
+
+        .nav-active {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        .tourism-menu:hover .tourism-submenu {
+            display: block;
+        }
+
+        .tourism-submenu .submenu-item {
+            display: block;
+            padding: .5rem 1rem;
+            font-size: .875rem;
+            color: #374151;
+        }
+
+        .tourism-submenu .submenu-item:hover {
+            background: #f3f4f6;
+            color: #111827;
+        }
+
+        .tourism-submenu .submenu-active {
+            background: #eef2ff;
+            color: #1d4ed8;
+            font-weight: 700;
+        }
     </style>
 </head>
+
 <body class="bg-[var(--secondary-color)]">
-<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-<div class="layout-container flex h-full grow flex-col">
-<header class="site-header sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md px-6 py-4 border-b border-stone-200">
-  <div class="mx-auto flex max-w-7xl items-center justify-between">
-    <div class="flex items-center gap-3 text-[var(--text-primary)]">
-      <div class="size-6 text-[var(--primary-color)]"><svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path></svg></div>
-  <a href="home.html" class="text-xl font-bold leading-tight tracking-[-0.015em]">Helstein Village</a>
-    </div>
-  <button class="mobile-toggle md:hidden" aria-label="Open menu" data-mobile-toggle>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-  </button>
-  <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Primary">
-      <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
-      <div class="relative tourism-menu">
-        <a class="nav-link" href="tourism.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tourism">Tourism <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
-        <div class="tourism-submenu" role="menu" aria-label="Tourism submenu">
-          <a class="submenu-item" href="tourism.html" role="menuitem" data-i18n="nav.museums">Museums</a>
-          <a class="submenu-item" href="tourism-museums.html" role="menuitem" data-i18n="nav.workshops">Workshops</a>
-          <a class="submenu-item" href="artists.html" role="menuitem" data-i18n="nav.artisans">Artisans</a>
+    <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+        style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="site-header sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md px-6 py-4 border-b border-stone-200">
+                <div class="mx-auto flex max-w-7xl items-center justify-between">
+                    <div class="flex items-center gap-3 text-[var(--text-primary)]">
+                        <div class="size-6 text-[var(--primary-color)]"><svg fill="none" viewBox="0 0 48 48"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                                    fill="currentColor"></path>
+                            </svg></div>
+                        <a href="home.html" class="text-xl font-bold leading-tight tracking-[-0.015em]">Helstein
+                            Village</a>
+                    </div>
+                    <button class="mobile-toggle md:hidden" aria-label="Open menu" data-mobile-toggle>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <nav class="hidden md:flex items-center gap-8 text-sm font-medium" aria-label="Primary">
+                        <a class="nav-link" href="home.html" data-i18n="nav.home">Home</a>
+                        <a class="nav-link" href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+                        <a class="nav-link" href="artists.html" data-i18n="nav.artisans">Artisans</a>
+                        <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
+                        <a class="nav-link nav-link--active" href="stories.html" data-i18n="nav.stories">Stories</a>
+                        <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-2">
+                        <button class="btn-ios-ghost btn-sm lang-btn" aria-haspopup="true" aria-expanded="false">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z">
+                                </path>
+                            </svg>
+                            <span class="hidden sm:inline ml-1">EN</span>
+                        </button>
+                    </div>
+                    <div class="mobile-menu md:hidden" data-mobile-menu>
+                        <a href="home.html" data-i18n="nav.home">Home</a>
+                        <a href="tourism.html" data-i18n="nav.tourism">Tourism</a>
+                        <a href="artists.html" data-i18n="nav.artisans">Artisans</a>
+                        <a href="events.html" data-i18n="nav.events">Events</a>
+                        <a href="stories.html" data-i18n="nav.stories">Stories</a>
+                        <a href="contacts.html" data-i18n="nav.contact">Contact</a>
+                        <div class="flex items-center gap-2 p-2">
+                            <a href="#" data-set-lang="en" class="text-gray-700">EN</a>
+                            <span class="text-gray-400">/</span>
+                            <a href="#" data-set-lang="ro" class="text-gray-700">RO</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 px-4 py-8 md:px-8 md:py-16 lg:px-20">
+                <div class="mx-auto max-w-7xl">
+                    <div class="text-center mb-12">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight">
+                            Village Stories</h1>
+                        <p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--text-secondary)]">
+                            Explore the rich tapestry of Helstein Village through captivating stories that bring its
+                            history, traditions, and vibrant community to life.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <a class="group block" href="stories.html#legend-ancient-oak">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="The Legend of the Ancient Oak" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe_hh4v1uZW5--gEdBzILgPyhkNm0spzrZdRVbua_GZo5rgD1tEhqhbU7ufelDDLRqHTD42LGgbpE9UwCm06HbiY0asbekb_IhNJ-ogfoRYpfhCCLf9ylhVi44TPH6SJK68XIAMUseH1UrCmOR9AqacVaNj3o-4XXnpWdaFzl_EOzL9ai50Z_ClSyL-Lh4WOMyObl0awNMbYmvYmSzal-B3f5Mqq3GhF-IljAZP9h1nd5Jo2xiQhxqxyrzm9vnigRQ-ufcHeRKYec" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        The Legend of the Ancient Oak</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Discover the mystical tale
+                                        behind the village's oldest landmark.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#pottery">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="Crafting the Traditional Helstein Pottery"
+                                        class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuATd4yx14EFCM8pQ8x4P3PLccmZkOouVjzrhGIlrb3PeXZjTqcwpuCD6F7lvbgTJhynQaLL1px1idr8NdG2QgMsaL6krqz-lqS96k8NghjM6SgOkBiacvpAxVzmfG0WLpOZJ9AgVtTxt7cK1Dw3wKGnIXfdXxKTmkQ8r9OHdqObWRZ6whAtvwmtEY_5Qq5cZSGBp6N1_n0jP_jrGEC5JXpJPY9S2JBG_eOmeOfuXM-0kwhFNEOMp7gJEuX4S2c07jtmaR4H4fYx0DU" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        Crafting the Traditional Helstein Pottery</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Learn about the unique pottery
+                                        techniques passed down through generations.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#shepherd">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="A Day in the Life of a Shepherd" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ngakpONdlux2uJkv_LY6Y2KjDH_v8U0xElrgfb2zkaFHMsYgqiZ1J61VJC3biPp-GAo_kVpS4Jr9Yb0o7Fssj3sL4sD2itjEUjO6I6JUkXGqgXDZHv_CgSkpAWKEbUzuvBdGl1zrv3Z4zDvgw8IwZW847LM759OaVKfWKChSeK4ARpnqDL05qlMlXtm20JN155T4lhS-dyub-dD30ujWihQuoqICWmBWIeYbYJkMMgOiwuIBK-CRjJ8pfSmMTitmzm8BWc6gHYg" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        A Day in the Life of a Shepherd</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Experience a day with a local
+                                        shepherd and his flock.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#harvest-festival">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="The Annual Harvest Festival" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_-nFb4y7hy_-U4gAp3GUFkJuvdNIOGBKCoLL0M39OTVV3ajVS2SHMpTBfwKh-gAXNAPqrlJCOeOYRb2O7VelVOfmDzQLdB36ja56yg8II5LjxDB__xbzI7uW_L5p-e1sIkgn-Cd4cmutbT-DC9oKQVghfm1qjz6C1orvtNTUfSPuL5Pfp3fAUr4ViYTXqGxdfACuS4xgzQM_7UlN43nCWggR7luiI7EHmzFmbg4vUBBqf4AF107sawlPVbOLVPBdHgy6tQm7CTfk" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        The Annual Harvest Festival</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Join the vibrant celebrations
+                                        of the annual harvest.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#honey">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="The Secret of the Village's Honey" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFFZRlPEbXopN065dLa_y_M7CLRPaK2_IrDX_KKMqyJWeQUyICe1JEGm0yEQ62q30N3pj-VAeytJWUHKLrsymYd9Kqt_nSS9MRfXbasCuVCm5EUcXs3gAFNIWf5bhV73r95tZwOK6JKzwCkZ7pIQkHp0v61f34HIJt266JO5o8T98f-uhYaZJIaxdddhrRKtxEKUneMWvB3o_hxJZh8-2CXazziri5Z9brj7fdJNaNGgIzN78llE_ZYx5Rp_eIyMSsotr8RLu1BIo" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        The Secret of the Village's Honey</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Uncover the secrets of the
+                                        village's renowned honey production.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#weaving">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="The Art of Weaving Helstein Carpets" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCvw_WzAeIEd1quyUWXDvCOeAEjmtXMxWchkMZH45dTkuHwSY6FfkZsahNtezyHzULivY-rmHpvzr1na7AagbVzRmZy3Upgu-C9tuTtg9ojx5feDKUJJzfFy5RAd_LhYptLmwFv575o1e00au8wgQ9FZeObH2VMlPOnmVVtgQuBkpb-yOlJKWtZkgzAbjanI0FwisGOapyJJqAqazAYtHmU4PbqfpYmwqew9G6vU3vPT29CsiJnTGjjMXO9enS8nzGLccveD-U4k" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        The Art of Weaving Helstein Carpets</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Explore the intricate patterns
+                                        and craftsmanship of Helstein carpets.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#old-mill">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="The Story of the Old Mill" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWIc-XaoNChis3EcDbdp1UiqVdl5BNZ-iZJBs1wDZMe2_SIFYzyvF6-kWdHx9gMAdtqGEd9RkhAtmz4oIGR0ExWsWOj3kEVz9avnmVLsi61tLmW7eGL16Entxc-DMZZB8i658nbD0Bs9xCZFNk_Z5-8M5dGAPmkc-qvUitRJJ5kk5p43fgL8b3zyXdfgjdLJ80P2OkUF99LVpNI0grkCKFN77Wn8z7cDYbKkE8mWiigUeFnn9_B2gx2hhfSBD_CoBebY8Oi0pveE8" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        The Story of the Old Mill</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Hear the story of the historic
+                                        mill and its significance to the village.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group block" href="stories.html#music-dance">
+                            <div
+                                class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                                <div class="aspect-w-4 aspect-h-3">
+                                    <img alt="The Music and Dance of Helstein" class="object-cover w-full h-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUtIPhVtxyFpHgXOVlYNf2QuEXN5D3LdNuxxbn3EB9377YMsQT396Re3NLGwnkeyQoRMZfx39o6webgUwl5FwN0U3_U_3-Cg1KAjQGfmGUvVSJpJtvRzEmsB0rJ5HotWMOuh9UDhYl9RxvMOBqVWfcB8mQ0UhzY9nVhWX3VXTeNJwoc408D2I8V2BJ_YOyq8p63QQ5pkmPB-9umzUkt7opRzqv0flmM6QLE35UyNqSJtrfZhm9PwAzQ0qQ2Xsr4tigxdWhzoIaN8o" />
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <h3
+                                        class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">
+                                        The Music and Dance of Helstein</h3>
+                                    <p class="mt-2 text-sm text-[var(--text-secondary)]">Immerse yourself in the lively
+                                        music and traditional dances of Helstein.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
         </div>
-      </div>
-      <a class="nav-link" href="events.html" data-i18n="nav.events">Events</a>
-      <a class="nav-link" href="stories.html" data-i18n="nav.stories">Stories</a>
-      <a class="nav-link" href="contacts.html" data-i18n="nav.contact">Contact</a>
-    </nav>
-    <div class="flex items-center gap-2">
-      <button class="btn-ios-ghost btn-sm lang-btn" aria-haspopup="true" aria-expanded="false">
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
-        <span class="hidden sm:inline ml-1">EN</span>
-      </button>
     </div>
-    <div class="mobile-menu md:hidden" data-mobile-menu>
-      <a href="home.html" data-i18n="nav.home">Home</a>
-      <a href="tourism.html" data-i18n="nav.tourism">Tourism</a>
-      <a href="tourism.html#" data-i18n="nav.museums">Museums</a>
-      <a href="tourism-museums.html" data-i18n="nav.workshops">Workshops</a>
-      <a href="artists.html" data-i18n="nav.artisans">Artisans</a>
-      <a href="events.html" data-i18n="nav.events">Events</a>
-      <a href="stories.html" data-i18n="nav.stories">Stories</a>
-      <a href="contacts.html" data-i18n="nav.contact">Contact</a>
-      <div class="flex items-center gap-2 p-2">
-        <a href="#" data-set-lang="en" class="text-gray-700">EN</a>
-        <span class="text-gray-400">/</span>
-        <a href="#" data-set-lang="ro" class="text-gray-700">RO</a>
-      </div>
-    </div>
-  </div>
-</header>
-<main class="flex-1 px-4 py-8 md:px-8 md:py-16 lg:px-20">
-<div class="mx-auto max-w-7xl">
-<div class="text-center mb-12">
-<h1 class="text-4xl md:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight">Village Stories</h1>
-<p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--text-secondary)]">
-                Explore the rich tapestry of Helstein Village through captivating stories that bring its history, traditions, and vibrant community to life.
-              </p>
-</div>
-<div class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-<a class="group block" href="stories.html#legend-ancient-oak">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="The Legend of the Ancient Oak" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe_hh4v1uZW5--gEdBzILgPyhkNm0spzrZdRVbua_GZo5rgD1tEhqhbU7ufelDDLRqHTD42LGgbpE9UwCm06HbiY0asbekb_IhNJ-ogfoRYpfhCCLf9ylhVi44TPH6SJK68XIAMUseH1UrCmOR9AqacVaNj3o-4XXnpWdaFzl_EOzL9ai50Z_ClSyL-Lh4WOMyObl0awNMbYmvYmSzal-B3f5Mqq3GhF-IljAZP9h1nd5Jo2xiQhxqxyrzm9vnigRQ-ufcHeRKYec"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">The Legend of the Ancient Oak</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Discover the mystical tale behind the village's oldest landmark.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#pottery">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="Crafting the Traditional Helstein Pottery" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATd4yx14EFCM8pQ8x4P3PLccmZkOouVjzrhGIlrb3PeXZjTqcwpuCD6F7lvbgTJhynQaLL1px1idr8NdG2QgMsaL6krqz-lqS96k8NghjM6SgOkBiacvpAxVzmfG0WLpOZJ9AgVtTxt7cK1Dw3wKGnIXfdXxKTmkQ8r9OHdqObWRZ6whAtvwmtEY_5Qq5cZSGBp6N1_n0jP_jrGEC5JXpJPY9S2JBG_eOmeOfuXM-0kwhFNEOMp7gJEuX4S2c07jtmaR4H4fYx0DU"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">Crafting the Traditional Helstein Pottery</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Learn about the unique pottery techniques passed down through generations.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#shepherd">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="A Day in the Life of a Shepherd" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ngakpONdlux2uJkv_LY6Y2KjDH_v8U0xElrgfb2zkaFHMsYgqiZ1J61VJC3biPp-GAo_kVpS4Jr9Yb0o7Fssj3sL4sD2itjEUjO6I6JUkXGqgXDZHv_CgSkpAWKEbUzuvBdGl1zrv3Z4zDvgw8IwZW847LM759OaVKfWKChSeK4ARpnqDL05qlMlXtm20JN155T4lhS-dyub-dD30ujWihQuoqICWmBWIeYbYJkMMgOiwuIBK-CRjJ8pfSmMTitmzm8BWc6gHYg"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">A Day in the Life of a Shepherd</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Experience a day with a local shepherd and his flock.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#harvest-festival">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="The Annual Harvest Festival" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_-nFb4y7hy_-U4gAp3GUFkJuvdNIOGBKCoLL0M39OTVV3ajVS2SHMpTBfwKh-gAXNAPqrlJCOeOYRb2O7VelVOfmDzQLdB36ja56yg8II5LjxDB__xbzI7uW_L5p-e1sIkgn-Cd4cmutbT-DC9oKQVghfm1qjz6C1orvtNTUfSPuL5Pfp3fAUr4ViYTXqGxdfACuS4xgzQM_7UlN43nCWggR7luiI7EHmzFmbg4vUBBqf4AF107sawlPVbOLVPBdHgy6tQm7CTfk"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">The Annual Harvest Festival</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Join the vibrant celebrations of the annual harvest.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#honey">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="The Secret of the Village's Honey" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFFZRlPEbXopN065dLa_y_M7CLRPaK2_IrDX_KKMqyJWeQUyICe1JEGm0yEQ62q30N3pj-VAeytJWUHKLrsymYd9Kqt_nSS9MRfXbasCuVCm5EUcXs3gAFNIWf5bhV73r95tZwOK6JKzwCkZ7pIQkHp0v61f34HIJt266JO5o8T98f-uhYaZJIaxdddhrRKtxEKUneMWvB3o_hxJZh8-2CXazziri5Z9brj7fdJNaNGgIzN78llE_ZYx5Rp_eIyMSsotr8RLu1BIo"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">The Secret of the Village's Honey</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Uncover the secrets of the village's renowned honey production.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#weaving">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="The Art of Weaving Helstein Carpets" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCvw_WzAeIEd1quyUWXDvCOeAEjmtXMxWchkMZH45dTkuHwSY6FfkZsahNtezyHzULivY-rmHpvzr1na7AagbVzRmZy3Upgu-C9tuTtg9ojx5feDKUJJzfFy5RAd_LhYptLmwFv575o1e00au8wgQ9FZeObH2VMlPOnmVVtgQuBkpb-yOlJKWtZkgzAbjanI0FwisGOapyJJqAqazAYtHmU4PbqfpYmwqew9G6vU3vPT29CsiJnTGjjMXO9enS8nzGLccveD-U4k"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">The Art of Weaving Helstein Carpets</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Explore the intricate patterns and craftsmanship of Helstein carpets.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#old-mill">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="The Story of the Old Mill" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWIc-XaoNChis3EcDbdp1UiqVdl5BNZ-iZJBs1wDZMe2_SIFYzyvF6-kWdHx9gMAdtqGEd9RkhAtmz4oIGR0ExWsWOj3kEVz9avnmVLsi61tLmW7eGL16Entxc-DMZZB8i658nbD0Bs9xCZFNk_Z5-8M5dGAPmkc-qvUitRJJ5kk5p43fgL8b3zyXdfgjdLJ80P2OkUF99LVpNI0grkCKFN77Wn8z7cDYbKkE8mWiigUeFnn9_B2gx2hhfSBD_CoBebY8Oi0pveE8"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">The Story of the Old Mill</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Hear the story of the historic mill and its significance to the village.</p>
-</div>
-</div>
-</a>
-<a class="group block" href="stories.html#music-dance">
-<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="aspect-w-4 aspect-h-3">
-<img alt="The Music and Dance of Helstein" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUtIPhVtxyFpHgXOVlYNf2QuEXN5D3LdNuxxbn3EB9377YMsQT396Re3NLGwnkeyQoRMZfx39o6webgUwl5FwN0U3_U_3-Cg1KAjQGfmGUvVSJpJtvRzEmsB0rJ5HotWMOuh9UDhYl9RxvMOBqVWfcB8mQ0UhzY9nVhWX3VXTeNJwoc408D2I8V2BJ_YOyq8p63QQ5pkmPB-9umzUkt7opRzqv0flmM6QLE35UyNqSJtrfZhm9PwAzQ0qQ2Xsr4tigxdWhzoIaN8o"/>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-lg font-semibold text-[var(--text-primary)] leading-tight group-hover:text-[var(--primary-color)] transition-colors">The Music and Dance of Helstein</h3>
-<p class="mt-2 text-sm text-[var(--text-secondary)]">Immerse yourself in the lively music and traditional dances of Helstein.</p>
-</div>
-</div>
-</a>
-</div>
-</div>
-</main>
-</div>
-</div>
 
-<!-- Shared behaviors loaded via assets/js/helestein.js -->
+    <!-- Shared behaviors loaded via assets/js/helestein.js -->
 
-</body></html>
+</body>
+
+</html>
